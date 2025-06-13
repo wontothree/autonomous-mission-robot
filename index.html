@@ -17,7 +17,7 @@
         <h1>Video</h1>
         <div class="box">
             <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; /* 16:9 비율 */">
-                <iframe src="https://www.youtube.com/embed/qWbYItPG7f0" 
+                <iframe src="https://www.youtube.com/embed/0FwY5ziacQI" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen
                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
@@ -27,17 +27,43 @@
 
         <h1>Project</h1>
         <div class="box">
-            <div>- Topic: ECG-Based Cardiovascular Diagnosis Device personalized management solution using InBody data</div>
-            <div>- Project Duration: 07/01/2023-07/31/2023</div>
-            <div>- Excellence Prize at Inbody Makerthon 2023 held by Inbody Co., Ltd</div>
-            <div>- Team Members: 김인겸, 조성원, 김세원, 편해찬, 김연제</div>
+            <div>- </div>
+            <div>- </div>
+            <div>- </div>
+            <div>- </div>
         </div>
 
-        <h1>Experience</h1>
 
+        <h1>Competition</h1>
         <div class="box">
-            <p>Inbody 사에서 주관하는 2023 메이커톤에서 심혈관질환 측정 장치와 인바디 데이터를 활용한 개인 맞춤 관리 솔루션을 개발하였고, 그 결과 200만원의 상금과 우수상을 받았습니다.</p>
-            <p>ECG 센서로부터 수집된 데이터에서 노이즈를 제거하고 정규화하는 과정에서 CNN 모델을 사용하였으며, 이를 인바디 데이터와 융합하여 심혈관 질환을 진단하는 ML 알고리즘을 개발했습니다.</p>
+            <p>AI 물체 인식 기반 태양광 트래킹 로봇 대회에서 80초의 기록을 달성하여 우수상을 받았습니다. </p>
+
+            <div>대회의 목표</div>
+            <p>맵에서 도로는 흰 배경에 검정색으로 표시되어 있으며, 도로 주변에는 풍력 발전소와 태양광 발전소가 위치해 있습니다. 모바일 로봇은 카메라를 통해 도로를 인식하여 도로 경계선 안에서 자율주행해야 하며, 경계선을 넘어가면 10초가 추가됩니다. 각 발전소에 도달하면 발전소와 통신하며 발전소를 동작시켜야 합니다. 이를 만족하면서 목적지에 최대한 빠르게 도달하는 것이 대회의 목표입니다.</p>
+
+            <div>제가 설계한 모바일 로봇의 거시적인 아키텍쳐는 다음과 같습니다.</div>
+            <div>1. OpenCV를 이용하여 raspberry pi에 연결된 monocular camera로부터 sensing data를 수신합니다.</div>
+            <div>2. MQTT Communication을 통하여 Raspberry Pi가 외부 시스템과 상호작용합니다.</div>
+            <div>3. Serial Communication을 통하여 Raspberry Pi가 레고 허브를 제어합니다.</div>
+            <div>4. Raspberry Pi는 의사결정을 내리고 경로 생성을 합니다.</div>
+            <div>5. 레고 허브는 모터를 제어합니다.</div>
+
+            <br>
+
+            <div>모바일 로봇이 태양 발전소와 상호작용하는 과정은 다음과 같습니다. 풍력 발전소도 이와 유사합니다.</div>
+            <div>1. 모바일 로봇이 태양 발전소에 도달하면 태양 발전소은 초음파 센서를 통해 이를 감지하여 모바일 로봇에 정지하라는 신호를 송신합니다.</div>
+            <div>2. 모바일 로봇은 이 신호를 수신하여 정지하고 태양 발전소에 태양광판을 동작시키라는 신호를 송신합니다.</div>
+            <div>3. 태양 발전소은 이 신호를 수신하여 태양광판을 동작시키고, 이를 완료하면 모바일 로봇에 출발하라는 신호를 송신합니다.</div>
+            <div>4. 모바일 로봇은 이를 수신하여 다시 출발합니다.</div>
+
+            <br>
+            <div>저는 다음 두 가지에 집중하여 자율주행 모바일 로봇을 개발했습니다.</div>
+            <div>1. 하드웨어와 소프트웨어를 효율적으로 통합하려고 노력했습니다. </div>
+            <div>2. 맵의 특성을 고려하여 카메라의 영역마다 들어오는 빛의 양을 기준으로 제어 알고리즘을 개발했습니다.</div>
+
+            <br>
+
+            <p>하드웨어를 어떻게 설계할지, 어떤 센서를 사용할지, 두 모터를 어떻게 제어할지, 각 변수의 임계값을 어떻게 설정할지, MQTT 방식으로 통신할지 등 많은 문제에 부딪혔습니다. 각 방식과 파라미터 값들을 엑셀로 정리하고 결과를 비교하여 최적의 주행 알고리즘을 만들었습니다. 이러한 접근을 통해 속도를 올렸을 때 경계선을 한 번씩 밟는 문제를 해결하여 좋은 성과를 낼 수 있었습니다.</p>
         </div>
     </div>
 
