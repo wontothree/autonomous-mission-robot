@@ -1,4 +1,4 @@
-# Tracing Mobile Robot
+# Autonomous Mobile Robot for Executing Missions
 
 Excellence Prize at AI Object recognition-based Solar Tracking Robot Challenge held by Engineering Education Innovation Center of KOREA University (07/24/2023-07/28/2023)
 
