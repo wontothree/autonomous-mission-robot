@@ -14,67 +14,98 @@
     <br><br>
     
     <div class="base">
-        <h1>Project</h1>
-        <div class="box">
-            <div>- Project Duration: 07/24/2023-07/28/2023</div>
-            <div>- Excellence Prize at AI Object recognition-based Solar Tracking Robot Challenge held by Engineering Education Innovation Center of KOREA University</div>
-            <div>- Team Member: Sewon Kim, Seongyeol Maeng</div>
-        </div>
-        
-        <h1>Video</h1>
-        <div class="box">
-            <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; /* 16:9 비율 */">
-                <iframe src="https://www.youtube.com/embed/0FwY5ziacQI" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
-                </iframe>
+
+        <section style="width: 100%; margin-bottom: 40px;">
+            <h1 style="font-size: 1.87rem;">📁 Project Overview</h1>
+            <div class="box">
+                <h2>🚀 Project Name</h2>
+                <p><strong>Autonomous Mobile Robot for Executing Missions</strong></p>
+
+                <h2>🗓 Project Duration</h2>
+                <p>2023.07.24 – 2023.07.28</p>
+
+                <h2>💼 Competition</h2>
+                <p>
+                    Excellence Prize and Prize Money $100, AI Object recognition-based Solar Tracking Robot Challenge,<br>
+                    held by Engineering Education Innovation Center of KOREA University
+                </p>
+
+                <h2>🧑‍🤝‍🧑 Team Members</h2>
+                <ul>
+                    <li><strong>Sewon Kim</strong></li>
+                    <li>Seongyeol Maeng</li>
+                </ul>
             </div>
-        </div>
+        </section>
+        
+        <section style="width: 100%; margin-bottom: 40px;">
+            <h1 style="font-size: 1.87rem;">🎥 Video</h1>
+            <div class="box">
+                <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; /* 16:9 비율 */">
+                    <iframe src="https://www.youtube.com/embed/0FwY5ziacQI" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+                    </iframe>
+                </div>
+            </div>
+        </section>
 
-        <h1>Development</h1>
-        <div class="box">
-            <p>AI 물체 인식 기반 태양광 트래킹 로봇 대회에서 80초의 기록을 달성하여 우수상을 받았습니다. </p>
+        <section style="width: 100%; margin-bottom: 40px;">
+            <h1 style="font-size: 1.87rem;">💼 Competition</h1>
+            <div class="box">
+                <p>맵에서 도로는 흰 배경에 검정색으로 표시되어 있으며, 도로 주변에는 풍력 발전소와 태양광 발전소가 위치해 있습니다. 모바일 로봇은 카메라를 통해 도로를 인식하여 도로 경계선 안에서 자율주행해야 하며, 경계선을 넘어가면 10초가 추가됩니다. 각 발전소에 도달하면 발전소와 통신하며 발전소를 동작시켜야 합니다. 이를 만족하면서 목적지에 최대한 빠르게 도달하는 것이 대회의 목표입니다.</p>
+            </div>
+        </section>
 
-            <div>대회의 목표</div>
-            <p>맵에서 도로는 흰 배경에 검정색으로 표시되어 있으며, 도로 주변에는 풍력 발전소와 태양광 발전소가 위치해 있습니다. 모바일 로봇은 카메라를 통해 도로를 인식하여 도로 경계선 안에서 자율주행해야 하며, 경계선을 넘어가면 10초가 추가됩니다. 각 발전소에 도달하면 발전소와 통신하며 발전소를 동작시켜야 합니다. 이를 만족하면서 목적지에 최대한 빠르게 도달하는 것이 대회의 목표입니다.</p>
+        <!-- Development -->
+        <section style="width: 100%; margin-bottom: 40px;">
+            <h1 style="font-size: 1.87rem;">💡 Development</h1>
 
-            <div>제가 설계한 모바일 로봇의 거시적인 아키텍쳐는 다음과 같습니다.</div>
-            <div>1. OpenCV를 이용하여 raspberry pi에 연결된 monocular camera로부터 sensing data를 수신합니다.</div>
-            <div>2. MQTT Communication을 통하여 Raspberry Pi가 외부 시스템과 상호작용합니다.</div>
-            <div>3. Serial Communication을 통하여 Raspberry Pi가 레고 허브를 제어합니다.</div>
-            <div>4. Raspberry Pi는 의사결정을 내리고 경로 생성을 합니다.</div>
-            <div>5. 레고 허브는 모터를 제어합니다.</div>
+            <div class="box">
+            <p>AI 물체 인식 기반 태양광 트래킹 로봇 대회에서 80초의 기록을 달성하여 우수상을 받았습니다.</p>
 
-            <br>
+            <p>제가 설계한 모바일 로봇의 거시적인 아키텍쳐는 다음과 같습니다.</p>
+            <ol style="padding-left: 20px;">
+                <li>OpenCV를 이용하여 raspberry pi에 연결된 monocular camera로부터 sensing data를 수신합니다.</li>
+                <li>MQTT Communication을 통하여 Raspberry Pi가 외부 시스템과 상호작용합니다.</li>
+                <li>Serial Communication을 통하여 Raspberry Pi가 레고 허브를 제어합니다.</li>
+                <li>Raspberry Pi는 의사결정을 내리고 경로 생성을 합니다.</li>
+                <li>레고 허브는 모터를 제어합니다.</li>
+            </ol>
 
-            <div>모바일 로봇이 태양 발전소와 상호작용하는 과정은 다음과 같습니다. 풍력 발전소도 이와 유사합니다.</div>
-            <div>1. 모바일 로봇이 태양 발전소에 도달하면 태양 발전소은 초음파 센서를 통해 이를 감지하여 모바일 로봇에 정지하라는 신호를 송신합니다.</div>
-            <div>2. 모바일 로봇은 이 신호를 수신하여 정지하고 태양 발전소에 태양광판을 동작시키라는 신호를 송신합니다.</div>
-            <div>3. 태양 발전소은 이 신호를 수신하여 태양광판을 동작시키고, 이를 완료하면 모바일 로봇에 출발하라는 신호를 송신합니다.</div>
-            <div>4. 모바일 로봇은 이를 수신하여 다시 출발합니다.</div>
+            <p>모바일 로봇이 태양 발전소와 상호작용하는 과정은 다음과 같습니다. 풍력 발전소도 이와 유사합니다.</p>
+            <ol style="padding-left: 20px;">
+                <li>모바일 로봇이 태양 발전소에 도달하면 태양 발전소은 초음파 센서를 통해 이를 감지하여 모바일 로봇에 정지하라는 신호를 송신합니다.</li>
+                <li>모바일 로봇은 이 신호를 수신하여 정지하고 태양 발전소에 태양광판을 동작시키라는 신호를 송신합니다.</li>
+                <li>태양 발전소은 이 신호를 수신하여 태양광판을 동작시키고, 이를 완료하면 모바일 로봇에 출발하라는 신호를 송신합니다.</li>
+                <li>모바일 로봇은 이를 수신하여 다시 출발합니다.</li>
+            </ol>
 
-            <br>
-            <div>저는 다음 두 가지에 집중하여 자율주행 모바일 로봇을 개발했습니다.</div>
-            <div>1. 하드웨어와 소프트웨어를 효율적으로 통합하려고 노력했습니다. </div>
-            <div>2. 맵의 특성을 고려하여 카메라의 영역마다 들어오는 빛의 양을 기준으로 제어 알고리즘을 개발했습니다.</div>
-
-            <br>
+            <p>저는 다음 두 가지에 집중하여 자율주행 모바일 로봇을 개발했습니다.</p>
+            <ol style="padding-left: 20px;">
+                <li>하드웨어와 소프트웨어를 효율적으로 통합하려고 노력했습니다.</li>
+                <li>맵의 특성을 고려하여 카메라의 영역마다 들어오는 빛의 양을 기준으로 제어 알고리즘을 개발했습니다.</li>
+            </ol>
 
             <p>하드웨어를 어떻게 설계할지, 어떤 센서를 사용할지, 두 모터를 어떻게 제어할지, 각 변수의 임계값을 어떻게 설정할지, MQTT 방식으로 통신할지 등 많은 문제에 부딪혔습니다. 각 방식과 파라미터 값들을 엑셀로 정리하고 결과를 비교하여 최적의 주행 알고리즘을 만들었습니다. 이러한 접근을 통해 속도를 올렸을 때 경계선을 한 번씩 밟는 문제를 해결하여 좋은 성과를 낼 수 있었습니다.</p>
-        </div>
 
-        <h1>Photos</h1>
-        <div class="box">
-            <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                <img src="imgs/prize.png" alt="prize" style="width: 40%; height: auto; border-radius: 8px;">
             </div>
-            <a href="https://www.irobotnews.com/news/articleView.html?idxno=32285" target="_blank" style="color: #004080;">고려대 공학교육혁신센터-로봇SC-신재생에너지SC, 'AI 물체 인식 기반 태양광 트래킹 로봇 챌린지' 개최</a>
-            <br><br>
-            <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                <img src="imgs/news.png" alt="news" style="width: 40%; height: auto; border-radius: 8px;">
+        </section>
+
+        <section style="width: 100%;">
+            <h1 style="font-size: 1.87rem;">📷 Photos</h1>
+            <div class="box" style="padding-left: 15px;">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <img src="imgs/prize.png" alt="prize" style="width: 40%; height: auto; border-radius: 8px;">
+                </div>
+                <a href="https://www.irobotnews.com/news/articleView.html?idxno=32285" target="_blank" style="color: #004080;">고려대 공학교육혁신센터-로봇SC-신재생에너지SC, 'AI 물체 인식 기반 태양광 트래킹 로봇 챌린지' 개최</a>
+                <br><br>
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <img src="imgs/news.png" alt="news" style="width: 40%; height: auto; border-radius: 8px;">
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 
     <br><br>
